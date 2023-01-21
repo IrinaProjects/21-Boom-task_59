@@ -18,7 +18,9 @@ html {
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   background: $background;
 }
-
+.discounts {
+  visibility: hidden;
+}
 .main {
   height: 100vh;
   display: flex;
@@ -26,4 +28,10 @@ html {
   justify-content: center;
   font-size: 10rem;
   flex-flow: column;
+}
+
+@media only screen and (max-width: 599px) {
+  .discounts {
+    visibility: visible;
+  }
 }
